@@ -39,4 +39,4 @@ userRoutes.get('/getVehicle', Validate.authToken, User.getVehicle)
 userRoutes.put('/getVehicle/:id',Validate.authToken, User.assignVehicle)
 userRoutes.delete('/returnVehicle',Validate.authToken, User.returnVehicle)
 // Listening to Port
-app.listen(process.env.PORT || 3000,(req ,res)=>{res.status(200).send('All Cool Bro')})
+app.listen(process.env.PORT || 8081,()=>{console.log("Listening")})
